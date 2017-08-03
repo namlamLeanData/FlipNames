@@ -13,12 +13,6 @@ public class TestUpdateLead {
 		leads = fn.getLeads();
 	}
 	
-	// Number of leads returned from Salesforce should equal number of leads created prior
-	@Test(priority = 1)
-	public void testGetLeads() {
-		Assert.assertEquals(leads.size(), FlipNames.count);
-	}
-	
 	@Test
 	public void testSwap1() {
 		Lead lead = leads.get(index++);
